@@ -173,7 +173,7 @@ app.post("/api/chat", requireAuth, async (req, res) => {
 });
 
 app.get(/^\/(?!api).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 const PORT = process.env.PORT || 3000;
