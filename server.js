@@ -12,8 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, app.use(express.static(__dirname));
-
+app.use(express.static(__dirname));
 // ---------- Ayarlar ----------
 const APP_PASSWORD = process.env.APP_PASSWORD || "degistir123";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
